@@ -9,14 +9,13 @@ const MainMenu = () => {
   const [drink, setDrink] = useState([]);
 
   useEffect(() => {
-    // TODO axios call 
-    axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-      .then(response => {
-        setDrink(response.data.drinks[0])
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    // axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+    //   .then(response => {
+    //     setDrink(response.data.drinks[0])
+    //   })
+    //   .catch(error => {
+    //     console.log(error)
+    //   })
   }, [])
 
   return (

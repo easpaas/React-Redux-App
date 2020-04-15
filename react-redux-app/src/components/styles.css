@@ -6,19 +6,17 @@
   border: 2px solid;
   background-color: #B7A9A1;
 }
-.drink-contents {
-  width: 100%;
-  margin: 2% auto;
-  display: flex;
-  justify-content: space-evenly;
-}
 .sections {
-  margin: 2% 0;
+  margin: 4% 0;
+}
+.sections h4{
+  margin: 4% 0;
 }
 .tab {
   color: #403B3B;
-  padding: 1%;
+  margin: 0;
 }
+
 
 /* MainMenu styles */
 .main-menu{
