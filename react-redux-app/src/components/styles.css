@@ -1,0 +1,36 @@
+/* DrinkCard styles */
+.card {
+  width: 50%;
+  margin: 10% auto;
+  padding: 2%;
+  border: 2px solid;
+  background-color: #B7A9A1;
+}
+.drink-contents {
+  width: 100%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sections {
+  margin: 2% 0;
+}
+.tab {
+  color: #403B3B;
+  padding: 1%;
+}
+
+/* MainMenu styles */
+.main-menu{
+  width: 100%;
+  background-color: #DBD9D2;
+  border: 2px solid;
+}
+.image {
+  max-width: 45%;
+  margin: 2% auto;
+  border: 2px solid #DBD9D2;
+}
+img {
+  width: 100%;
+}

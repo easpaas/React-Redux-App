@@ -1,3 +1,10 @@
 .App{
   text-align: center;
 }
+#title {
+  font-size: 3rem;
+  font-variant: small-caps;
+  padding: 1%;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+}
