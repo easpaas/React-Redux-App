@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import './styles.css';
 
 
-// TODO 
-
 const DrinkCard = (props) => { 
   return (
     <div className="card">
@@ -26,13 +24,12 @@ const DrinkCard = (props) => {
 
 const mapStateToProps = state => {
   return {
-    id: state.id,
-    name: state.name, 
-    img_url: state.img_url,
-    category: state.category, 
-    glass: state.glass
+    id: state.drinkReducer.id,
+    name: state.drinkReducer.name, 
+    img_url: state.drinkReducer.img_url,
+    category: state.drinkReducer.category, 
+    glass: state.drinkReducer.glass
   }
 }
-
 
 export default connect(mapStateToProps, {})(DrinkCard);

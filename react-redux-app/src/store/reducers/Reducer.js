@@ -9,8 +9,18 @@ export const initialState = {
   glass: ''
 }
 
-export const Reducer = (state = initialState, action) => {
+export const drinkReducer = (state = initialState, action) => {
   switch(action.type) {
+    case FETCH_DATA: 
+    console.log('fetch data success', action.payload)
+      return {
+        ...state, 
+        id: action.payload.idDrink,
+        name: action.payload.strDrink, 
+        img_url: action.payload.strDrinkThumb, 
+        category: action.payload.strCategory,
+        glass: action.payload.strGlass
+      }
     default:
       return state;
   }

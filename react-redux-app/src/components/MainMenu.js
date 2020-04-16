@@ -1,32 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { connect } from "react-redux";
 import './styles.css';
-import axios from 'axios';
 
+import { fetchData } from '../store/actions/actions'
 import DrinkCard from './DrinkCard';
 
-const MainMenu = () => {
-  //TODO store data from api into redux store 
-  const [drink, setDrink] = useState([]);
+const MainMenu = ({fetchData}) => {
 
   useEffect(() => {
-    // axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-    //   .then(response => {
-    //     setDrink(response.data.drinks[0])
-    //   })
-    //   .catch(error => {
-    //     console.log(error)
-    //   })
-  }, [])
+    fetchData();
+  }, [fetchData])
 
   return (
     <div className="main-menu">
-      <DrinkCard drink={drink} />
+      <DrinkCard />
     </div>
   );
 }
 
-// mapStateToProps
-
-// export default connect(mapStateToProps, { any action items go here})(MainMenu)
-
-export default MainMenu;
+export default connect(null, { fetchData })(MainMenu);
