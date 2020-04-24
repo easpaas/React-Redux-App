@@ -10,13 +10,9 @@ const DrinkCard = (props) => {
       <div className="image">
         <img src={props.img_url} alt={props.name} />
       </div>
-      <div className="sections">
-        <h4>Classified as: </h4>
-        <p className="tab">{props.category}</p>
-      </div>
-      <div className="sections">
-        <h4>Best served in: </h4>
-        <p className="tab">{props.glass}</p>
+      <div className="section">
+        <h4>Classified as: {`${props.category}`}</h4>
+        <h4>Best served in: {`${props.glass}`} </h4>
       </div>
     </div>
   );

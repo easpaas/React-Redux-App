@@ -14,7 +14,6 @@ const MainMenu = ({loading, error, fetchData}) => {
 
   return (
     <div className="main-menu">
-      {/*  TODO fetching data displays loader if loading state = true */}
       {
         loading &&
           <Loader
@@ -22,7 +21,7 @@ const MainMenu = ({loading, error, fetchData}) => {
             color="#00BFFF"
             height={100}
             width={100}
-            timeout={5000} //3 secs
+            timeout={5000} //5 secs
           />
       }
       <DrinkCard />
